@@ -11,8 +11,33 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
+  Font: normal 100%/1.3 Georgia sans-serif;
 }
 
 *, *::before, *::after {
   box-sizing: inherit;
+}
+
+.card-img {
+  width: 50px;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+@media only screen and (min-width: 25em) {
+
+}
+
+@media only screen and (min-width: 38em) {
+
+}
+
+@media only screen and (min-width: 60em) {
+
+}
+
+@media only screen and (min-width: 90em) {
+
 }
