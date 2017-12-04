@@ -60,7 +60,7 @@ ul p {
 }
 
 .card-body p {
-  margin-bottom: .75em;
+  margin-bottom: 0;
 }
 
 @media only screen and (min-width: 25em) {
@@ -93,14 +93,13 @@ ul p {
     line-height: 1.4;
   }
 
-  .card {
-    display: block;
-    width: 33%;
+  ul .card {
+    display: inline-block;
+    width: 32%;
   }
 
-  div .card-body {
+  ul .card-body {
     margin-left: 0;
-    padding-left: .25em;
     width: 100%;
   }
 
