@@ -21,6 +21,8 @@ html {
 .cards {
   display: inline-block;
   list-style-type: none;
+  margin-top: 0;
+  padding-left: 0;
   width: 100%;
 }
 
@@ -29,12 +31,15 @@ html {
   width: 100%;
 }
 
-.card-img {
-  width: 50px;
+ul img {
+  display: block;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
 }
 
-ul img {
-  width: 100%;
+.card-img img {
+  width: 50px;
 }
 
 div .card-img {
@@ -44,6 +49,9 @@ div .card-img {
 
 ul h2 {
   font-size: 1.5rem;
+}
+
+.card-body h2 {
   margin-bottom: 0;
 }
 
@@ -51,24 +59,28 @@ ul p {
   margin-top: 0;
 }
 
+.card-body p {
+  margin-bottom: .75em;
+}
+
 @media only screen and (min-width: 25em) {
 
-  .card-body h2 {
+  h2 {
     margin: 0;
   }
 
-  .card-body p {
+  p {
     margin: 0 0 1.3rem;
   }
 
-  .card-img img {
-    float: left;
+  .card-img {
+    display: inline-block;
     padding-top: .5em;
     width: 50px;
   }
 
   .card-body {
-    float: left;
+    display: inline-block;
     margin-left: .75em;
     width: 300px;
   }
@@ -83,7 +95,6 @@ ul p {
 
   .card {
     display: block;
-    float: left;
     width: 33%;
   }
 
@@ -95,7 +106,6 @@ ul p {
 
   .card-img {
     display: block;
-    float: none;
     margin-bottom: 1em;
     margin-left: auto;
     margin-right: auto;
@@ -127,7 +137,6 @@ ul p {
 
   div .card-img {
     display: inline-block;
-    float: left;
     padding-top: 1.5em;
     margin-right: .5em;
     width: 50px;
@@ -135,7 +144,6 @@ ul p {
 
   div .card-body {
     display: inline-block;
-    float: left;
     width: 400px;
   }
 }
