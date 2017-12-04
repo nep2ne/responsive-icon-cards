@@ -11,30 +11,105 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
-  Font: normal 100%/1.3 Georgia sans-serif;
+  Font: normal 100%/1.3 sans-serif;
 }
 
 *, *::before, *::after {
   box-sizing: inherit;
 }
 
+.cards {
+  display: inline-block;
+  width: 100%;
+}
+
+.card {
+  display: inline-block;
+  width: 100%;
+}
+
 .card-img {
   width: 50px;
 }
 
+img {
+  width: 100%;
+}
+
+div .card-img {
+  margin-right: auto;
+  margin-left: auto;
+}
+
 h1 {
   font-size: 1.5rem;
+  margin-bottom: 0;
+}
+
+p {
+  margin-top: 0;
 }
 
 @media only screen and (min-width: 25em) {
 
+  h1 {
+    margin: 0;
+  }
+
+  p {
+    margin: 0 0 1.3rem;
+  }
+
+  .card-img {
+    float: left;
+    padding-top: .5em;
+    width: 50px;
+  }
+
+  .card-body {
+    float: left;
+    margin-left: .75em;
+    width: 300px;
+  }
 }
 
 @media only screen and (min-width: 38em) {
 
+  html {
+    font-size: 110%;
+    line-height: 1.4;
+  }
+
+  .card {
+    display: block;
+    float: left;
+    width: 33%;
+  }
+
+  div .card-body {
+    margin-left: 0;
+    padding-left: .25em;
+    width: 100%;
+  }
+
+  .card .card-img {
+    display: inline-block;
+    margin-bottom: 1em
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  img {
+  }
 }
 
 @media only screen and (min-width: 60em) {
+
+  html {
+    font-size: 120%;
+    line-height: 1.5;
+  }
+
 
 }
 
