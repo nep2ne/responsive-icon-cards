@@ -92,14 +92,12 @@ p {
     width: 100%;
   }
 
-  .card .card-img {
-    display: inline-block;
-    margin-bottom: 1em
+  .card-img {
+    display: block;
+    float: none;
+    margin-bottom: 1em;
     margin-left: auto;
     margin-right: auto;
-  }
-
-  img {
   }
 }
 
@@ -110,7 +108,9 @@ p {
     line-height: 1.5;
   }
 
-
+  div .card-body {
+    padding-right: .25em;
+  }
 }
 
 @media only screen and (min-width: 90em) {
