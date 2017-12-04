@@ -18,11 +18,7 @@ html {
   box-sizing: inherit;
 }
 
-.cards {
-  display: inline-block;
-  width: 100%;
-}
-
+.cards,
 .card {
   display: inline-block;
   width: 100%;
@@ -115,4 +111,26 @@ p {
 
 @media only screen and (min-width: 90em) {
 
+  html {
+    font-size: 130%;
+  }
+
+  .card {
+    display: inline-block;
+    width: 33%;
+  }
+
+  div .card-img {
+    display: inline-block;
+    float: left;
+    padding-top: 1.5em;
+    margin-right: .5em;
+    width: 50px;
+  }
+
+  div .card-body {
+    display: inline-block;
+    float: left;
+    width: 400px;
+  }
 }
