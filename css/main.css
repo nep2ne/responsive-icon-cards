@@ -18,7 +18,12 @@ html {
   box-sizing: inherit;
 }
 
-.cards,
+.cards {
+  display: inline-block;
+  list-style-type: none;
+  width: 100%;
+}
+
 .card {
   display: inline-block;
   width: 100%;
@@ -28,7 +33,7 @@ html {
   width: 50px;
 }
 
-img {
+ul img {
   width: 100%;
 }
 
@@ -37,26 +42,26 @@ div .card-img {
   margin-left: auto;
 }
 
-h1 {
+ul h2 {
   font-size: 1.5rem;
   margin-bottom: 0;
 }
 
-p {
+ul p {
   margin-top: 0;
 }
 
 @media only screen and (min-width: 25em) {
 
-  h1 {
+  .card-body h2 {
     margin: 0;
   }
 
-  p {
+  .card-body p {
     margin: 0 0 1.3rem;
   }
 
-  .card-img {
+  .card-img img {
     float: left;
     padding-top: .5em;
     width: 50px;
